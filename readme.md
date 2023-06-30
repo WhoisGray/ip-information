@@ -20,6 +20,43 @@ A simple Node.js application that captures client request details and provides i
    ```
 4. Open your browser and navigate to `http://localhost:3000`.
 
+## 🚀 Usage
+
+### Pull the Docker Image
+
+```shell
+docker pull WhoisGray/ip-information:latest
+```
+
+### Run the Docker Container
+
+```shell
+docker run -p 3000:3000 WhoisGray/ip-information:latest
+```
+
+Open your browser and navigate to http://localhost:3000 to access the application.
+
+## 🐳 Docker Compose
+
+If you prefer to use Docker Compose, you can use the following docker-compose.yml file:
+
+```yml
+version: "3"
+services:
+  ip-information:
+    image: whoisgray/ip-information:latest
+    ports:
+      - 3000:3000
+```
+
+Save this content in a file named docker-compose.yml in your project directory, and then run the following command:
+
+```shell
+  docker-compose up
+```
+
+This will start the IP Information application in a Docker container.
+
 ## 🐳 Docker
 
 This project includes Docker and Docker Compose files, allowing you to easily containerize and run the application in a Docker environment. To use Docker, follow these steps:
