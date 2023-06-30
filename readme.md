@@ -2,6 +2,7 @@
 
 A simple Node.js application that captures client request details and provides information about the client, including IP address, user agent, and geo location.
 
+[DockerHub](https://hub.docker.com/r/whoisgray/ip-information)
 ## 🚀 Quick Start
 
 1. Clone the repository:
@@ -75,7 +76,7 @@ This project includes Docker and Docker Compose files, allowing you to easily co
 ## 📋 Features
 
 - [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
-- [geoip-lite](https://www.npmjs.com/package/geoip-lite) - Light-weight module to look up IP address information.
+- [geoip-lite](https://www.npmjs.com/package/geoip-lite) - Lightweight module to look up IP address information.
 
 ## Routes
 
@@ -90,11 +91,11 @@ The application defines the following routes:
 
 - **"/details" Route**
   - This route handles GET requests to the "/details" URL.
-  - It retrieves additional information about the client, including IP address, user agent, and geo location.
+  - It retrieves additional information about the client, including IP address, user agent, and geo-location.
   - The IP address is extracted from the request headers, similar to the root route.
-  - The user agent information is obtained from the "user-agent" header in the request.
-  - The geo location information is obtained using the "geoip-lite" package based on the client's IP address.
-  - The response is a JSON object containing the client's IP address, user agent, and geo location details, along with other request information like URL, method, headers, and cookies.
+  - The user-agent information is obtained from the "user-agent" header in the request.
+  - The geoLocation information is obtained using the "geoip-lite" package based on the client's IP address.
+  - The response is a JSON object containing the client's IP address, user agent, and geo-location details, along with other request information like URL, method, headers, and cookies.
 
 You can access the root route ("/") to retrieve the client's public IP address and the "/details" route to obtain more comprehensive client information.
 
@@ -107,7 +108,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author:
 
 - [GitHub](https://github.com/WhoisGray)
-
-Now, the README.md file mentions the availability of Docker and Docker Compose files, and provides instructions on how to use them to containerize and run the application.
-
-If you have any further questions or need additional assistance, feel free to ask!
